@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App6.Principal">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Label Text="Bienvenido al SISTEMA" FontSize="20" HorizontalTextAlignment="Center"/>
+            <!--<Image Source="imagen.jpg"></Image>-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition>
+                    </RowDefinition>
+                    <RowDefinition>
+                    </RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                    <ColumnDefinition>
+                    </ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Label Text="USUARIO" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario" Grid.Row="0" Grid.Column="1"></Entry>
+                <Label Text="CONTRASEÑA" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtContraseña" Placeholder="Contraseña" IsPassword="True" Grid.Row="1" Grid.Column="1"></Entry>
+
+
+
+            </Grid>
+            <Button x:Name="btnIniciar" Text="Ingresar" Clicked="btnIniciar_Clicked"></Button>
+            <Button x:Name="btnRegistro" Text="Registrarse" Clicked="btnRegistro_Clicked"></Button>
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
